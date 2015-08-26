@@ -53,7 +53,6 @@
 		1A11D4A31B8D7A8200F9A353 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4551B8D7A7F00F9A353 /* objects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4A41B8D7A8200F9A353 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4561B8D7A7F00F9A353 /* ocsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4A51B8D7A8200F9A353 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4571B8D7A7F00F9A353 /* opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4A61B8D7A8300F9A353 /* opensslconf.h.bak in Resources */ = {isa = PBXBuildFile; fileRef = 1A11D4581B8D7A7F00F9A353 /* opensslconf.h.bak */; };
 		1A11D4A71B8D7A8300F9A353 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4591B8D7A7F00F9A353 /* opensslv.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4A81B8D7A8300F9A353 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45A1B8D7A7F00F9A353 /* ossl_typ.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4A91B8D7A8300F9A353 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45B1B8D7A7F00F9A353 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -164,7 +163,6 @@
 		1A11D51A1B8D7EDE00F9A353 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D51C1B8D7EDE00F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D51D1B8D7EDE00F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D51F1B8D7EDE00F9A353 /* opensslconf.h.bak in Resources */ = {isa = PBXBuildFile; fileRef = 1A11D4581B8D7A7F00F9A353 /* opensslconf.h.bak */; };
 		1A11D5371B8D84B900F9A353 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9069D28C0FCE659A0042E34C /* libcrypto.a */; };
 		1A11D5391B8D84B900F9A353 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44A1B8D7A7F00F9A353 /* evp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D53A1B8D84B900F9A353 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4781B8D7A7F00F9A353 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -243,7 +241,7 @@
 		1A11D5831B8D84B900F9A353 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D5841B8D84B900F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D5851B8D84B900F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D5871B8D84B900F9A353 /* opensslconf.h.bak in Resources */ = {isa = PBXBuildFile; fileRef = 1A11D4581B8D7A7F00F9A353 /* opensslconf.h.bak */; };
+		1A7520241B8DAC26005A67E0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7520231B8DABC3005A67E0 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -273,10 +271,6 @@
 /* Begin PBXFileReference section */
 		1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A11D41E1B8D704B00F9A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
-		1A11D41F1B8D704B00F9A353 /* iphoneos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = SOURCE_ROOT; };
-		1A11D4201B8D704B00F9A353 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = SOURCE_ROOT; };
-		1A11D4211B8D704B00F9A353 /* macosx.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = SOURCE_ROOT; };
-		1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OpenSSL.xcconfig; sourceTree = SOURCE_ROOT; };
 		1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant_time_locl.h; sourceTree = "<group>"; };
 		1A11D42B1B8D7A7F00F9A353 /* numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numbers.h; sourceTree = "<group>"; };
 		1A11D42C1B8D7A7F00F9A353 /* o_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = o_dir.h; sourceTree = "<group>"; };
@@ -357,6 +351,8 @@
 		1A11D4781B8D7A7F00F9A353 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
 		1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7520201B8DA880005A67E0 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
+		1A7520231B8DABC3005A67E0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9069D28C0FCE659A0042E34C /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -366,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A11D4251B8D740300F9A353 /* libcrypto.a in Frameworks */,
+				1A7520241B8DAC26005A67E0 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +390,8 @@
 			children = (
 				1A11D4281B8D7A7F00F9A353 /* include */,
 				1A11D41E1B8D704B00F9A353 /* Info.plist */,
-				1A11D41F1B8D704B00F9A353 /* iphoneos.modulemap */,
-				1A11D4201B8D704B00F9A353 /* iphonesimulator.modulemap */,
-				1A11D4211B8D704B00F9A353 /* macosx.modulemap */,
-				1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */,
+				1A7520201B8DA880005A67E0 /* module.modulemap */,
+				1A7520231B8DABC3005A67E0 /* libssl.a */,
 			);
 			path = OpenSSL;
 			sourceTree = "<group>";
@@ -858,7 +853,7 @@
 		9069D12F0FCE340B0042E34C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					1A11D4111B8D6F0900F9A353 = {
 						CreatedOnToolsVersion = 7.0;
@@ -892,7 +887,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A11D4A61B8D7A8300F9A353 /* opensslconf.h.bak in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,7 +894,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A11D51F1B8D7EDE00F9A353 /* opensslconf.h.bak in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,7 +901,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A11D5871B8D84B900F9A353 /* opensslconf.h.bak in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -975,7 +967,6 @@
 /* Begin XCBuildConfiguration section */
 		1A11D4171B8D6F0900F9A353 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1032,7 +1023,6 @@
 		};
 		1A11D4181B8D6F0900F9A353 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1084,7 +1074,6 @@
 		};
 		1A11D5211B8D7EDE00F9A353 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1143,7 +1132,6 @@
 		};
 		1A11D5221B8D7EDE00F9A353 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1197,7 +1185,6 @@
 		};
 		1A11D5891B8D84B900F9A353 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1240,14 +1227,18 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
 				PRODUCT_NAME = OpenSSL;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7 armv7s";
+				VALID_ARCHS = armv7k;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1255,7 +1246,6 @@
 		};
 		1A11D58A1B8D84B900F9A353 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A11D4221B8D704B00F9A353 /* OpenSSL.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1293,14 +1283,18 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
 				PRODUCT_NAME = OpenSSL;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7 armv7s";
+				VALID_ARCHS = armv7k;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1317,14 +1311,17 @@
 					x86_64,
 					i386,
 				);
+				"ARCHS[sdk=watchos2.0]" = armv7k;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = $SRCROOT/module.modulemap;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "$(PLATFORM_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos watchos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -1340,13 +1337,15 @@
 					x86_64,
 					i386,
 				);
+				"ARCHS[sdk=watchos2.0]" = armv7k;
 				COPY_PHASE_STRIP = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = $SRCROOT/module.modulemap;
 				SDKROOT = "$(PLATFORM_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s";
+				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos watchos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -1361,7 +1360,9 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/lib;
+				MODULEMAP_FILE = "";
 				PRODUCT_NAME = crypto;
+				SDKROOT = watchos;
 			};
 			name = Debug;
 		};
@@ -1374,7 +1375,9 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/lib;
+				MODULEMAP_FILE = "";
 				PRODUCT_NAME = crypto;
+				SDKROOT = watchos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1389,6 +1392,7 @@
 				1A11D4181B8D6F0900F9A353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A11D5201B8D7EDE00F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL iOS" */ = {
 			isa = XCConfigurationList;
