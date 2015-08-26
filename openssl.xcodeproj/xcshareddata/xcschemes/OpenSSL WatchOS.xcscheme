@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+               BlueprintIdentifier = "1A11D5321B8D84B900F9A353"
                BuildableName = "OpenSSL.framework"
-               BlueprintName = "OpenSSL iOS"
+               BlueprintName = "OpenSSL WatchOS"
                ReferencedContainer = "container:openssl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+            BlueprintIdentifier = "1A11D5321B8D84B900F9A353"
             BuildableName = "OpenSSL.framework"
-            BlueprintName = "OpenSSL iOS"
+            BlueprintName = "OpenSSL WatchOS"
             ReferencedContainer = "container:openssl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+            BlueprintIdentifier = "1A11D5321B8D84B900F9A353"
             BuildableName = "OpenSSL.framework"
-            BlueprintName = "OpenSSL iOS"
+            BlueprintName = "OpenSSL WatchOS"
             ReferencedContainer = "container:openssl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

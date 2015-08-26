@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A11D4111B8D6F0900F9A353"
-               BuildableName = "OpenSSL OS X.framework"
+               BuildableName = "OpenSSL.framework"
                BlueprintName = "OpenSSL OS X"
                ReferencedContainer = "container:openssl.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A11D4111B8D6F0900F9A353"
-            BuildableName = "OpenSSL OS X.framework"
+            BuildableName = "OpenSSL.framework"
             BlueprintName = "OpenSSL OS X"
             ReferencedContainer = "container:openssl.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A11D4111B8D6F0900F9A353"
-            BuildableName = "OpenSSL OS X.framework"
+            BuildableName = "OpenSSL.framework"
             BlueprintName = "OpenSSL OS X"
             ReferencedContainer = "container:openssl.xcodeproj">
          </BuildableReference>
