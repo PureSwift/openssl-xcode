@@ -241,7 +241,7 @@
 		1A11D5831B8D84B900F9A353 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D5841B8D84B900F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D5851B8D84B900F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A7520241B8DAC26005A67E0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7520231B8DABC3005A67E0 /* libssl.a */; };
+		1A7520471B8DE658005A67E0 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7520461B8DE62D005A67E0 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +265,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
 			remoteInfo = crypto;
+		};
+		1A7520481B8DE706005A67E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7520411B8DE62D005A67E0;
+			remoteInfo = ssl;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -352,7 +359,7 @@
 		1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7520201B8DA880005A67E0 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
-		1A7520231B8DABC3005A67E0 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7520461B8DE62D005A67E0 /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9069D28C0FCE659A0042E34C /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -361,8 +368,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7520471B8DE658005A67E0 /* libssl.a in Frameworks */,
 				1A11D4251B8D740300F9A353 /* libcrypto.a in Frameworks */,
-				1A7520241B8DAC26005A67E0 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +398,6 @@
 				1A11D4281B8D7A7F00F9A353 /* include */,
 				1A11D41E1B8D704B00F9A353 /* Info.plist */,
 				1A7520201B8DA880005A67E0 /* module.modulemap */,
-				1A7520231B8DABC3005A67E0 /* libssl.a */,
 			);
 			path = OpenSSL;
 			sourceTree = "<group>";
@@ -513,6 +519,7 @@
 				1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */,
 				1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */,
 				1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */,
+				1A7520461B8DE62D005A67E0 /* libssl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -787,6 +794,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1A7520491B8DE706005A67E0 /* PBXTargetDependency */,
 				1A11D4241B8D70E000F9A353 /* PBXTargetDependency */,
 			);
 			name = "OpenSSL OS X";
@@ -832,6 +840,21 @@
 			productReference = 1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1A7520411B8DE62D005A67E0 /* ssl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7520431B8DE62D005A67E0 /* Build configuration list for PBXNativeTarget "ssl" */;
+			buildPhases = (
+				1A7520421B8DE62D005A67E0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ssl;
+			productName = crypto;
+			productReference = 1A7520461B8DE62D005A67E0 /* libssl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9069D28B0FCE659A0042E34C /* crypto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9069D2980FCE65C10042E34C /* Build configuration list for PBXNativeTarget "crypto" */;
@@ -875,6 +898,7 @@
 			projectRoot = "";
 			targets = (
 				9069D28B0FCE659A0042E34C /* crypto */,
+				1A7520411B8DE62D005A67E0 /* ssl */,
 				1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */,
 				1A11D4C91B8D7EDE00F9A353 /* OpenSSL iOS */,
 				1A11D5321B8D84B900F9A353 /* OpenSSL WatchOS */,
@@ -907,6 +931,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A7520421B8DE62D005A67E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set | grep ARCH\nset -x\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source \n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n./config no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\" SHARED_LDFLAGS=\"-arch $BUILDARCH -dynamiclib\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n                                       \necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n                                       \necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n                                       \n";
+		};
 		9038ACD812DCAC96004FA0D0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -961,6 +998,11 @@
 			isa = PBXTargetDependency;
 			target = 9069D28B0FCE659A0042E34C /* crypto */;
 			targetProxy = 1A11D5341B8D84B900F9A353 /* PBXContainerItemProxy */;
+		};
+		1A7520491B8DE706005A67E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A7520411B8DE62D005A67E0 /* ssl */;
+			targetProxy = 1A7520481B8DE706005A67E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1300,6 +1342,38 @@
 			};
 			name = Release;
 		};
+		1A7520441B8DE62D005A67E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				MODULEMAP_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+			};
+			name = Debug;
+		};
+		1A7520451B8DE62D005A67E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				MODULEMAP_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		9069D1300FCE340B0042E34C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1408,6 +1482,15 @@
 			buildConfigurations = (
 				1A11D5891B8D84B900F9A353 /* Debug */,
 				1A11D58A1B8D84B900F9A353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7520431B8DE62D005A67E0 /* Build configuration list for PBXNativeTarget "ssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7520441B8DE62D005A67E0 /* Debug */,
+				1A7520451B8DE62D005A67E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
