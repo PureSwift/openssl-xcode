@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import OpenSSL
 
 class OpenSSLTests: XCTestCase {
     
@@ -23,13 +24,17 @@ class OpenSSLTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        print("OpenSSL Version: \(OPENSSL_VERSION_TEXT)")
+        
+        print("CRYPTO_UNLOCK: \(CRYPTO_UNLOCK)")
+        
+        print("SSL3 Version: \(SSL3_VERSION)")
+        
+        print("MDC2 Digest Length Version: \(MDC2_DIGEST_LENGTH)")
+        
+        print("CRYPTO_num_locks() = \(CRYPTO_num_locks())")
+        
+        print("SSL_SESSION_new() = \(SSL_SESSION_new())")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

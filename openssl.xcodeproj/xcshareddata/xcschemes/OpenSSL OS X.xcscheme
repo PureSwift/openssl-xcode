@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1A0115961B910FCF001E4035"
+               BuildableName = "OpenSSLTests OS X.xctest"
+               BlueprintName = "OpenSSLTests OS X"
+               ReferencedContainer = "container:openssl.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1A11D4111B8D6F0900F9A353"
+            BuildableName = "OpenSSL.framework"
+            BlueprintName = "OpenSSL OS X"
+            ReferencedContainer = "container:openssl.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

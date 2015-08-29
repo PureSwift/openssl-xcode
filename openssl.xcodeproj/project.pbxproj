@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1A01159A1B910FD0001E4035 /* OpenSSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0115991B910FD0001E4035 /* OpenSSLTests.swift */; };
 		1A01159C1B910FD0001E4035 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */; settings = {ASSET_TAGS = (); }; };
-		1A0115A21B910FF2001E4035 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115871B910F04001E4035 /* libcrypto.a */; };
-		1A0115A31B910FF2001E4035 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115921B910F0A001E4035 /* libssl.a */; };
+		1A0116141B918A88001E4035 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115871B910F04001E4035 /* libcrypto.a */; };
+		1A0116151B918A88001E4035 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115921B910F0A001E4035 /* libssl.a */; };
 		1A11D4791B8D7A7F00F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D47A1B8D7A7F00F9A353 /* numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42B1B8D7A7F00F9A353 /* numbers.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D47B1B8D7A7F00F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -252,6 +252,20 @@
 			remoteGlobalIDString = 1A11D4111B8D6F0900F9A353;
 			remoteInfo = "OpenSSL OS X";
 		};
+		1A01160B1B918706001E4035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0115861B910F04001E4035;
+			remoteInfo = crypto;
+		};
+		1A01160D1B918709001E4035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A01158B1B910F0A001E4035;
+			remoteInfo = ssl;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -350,9 +364,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0115A21B910FF2001E4035 /* libcrypto.a in Frameworks */,
-				1A0115A31B910FF2001E4035 /* libssl.a in Frameworks */,
 				1A01159C1B910FD0001E4035 /* OpenSSL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0116131B918A7A001E4035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0116141B918A88001E4035 /* libcrypto.a in Frameworks */,
+				1A0116151B918A88001E4035 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,30 +795,30 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1A0115861B910F04001E4035 /* crypto OS X */ = {
+		1A0115861B910F04001E4035 /* crypto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto OS X" */;
+			buildConfigurationList = 1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto" */;
 			buildPhases = (
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "crypto OS X";
+			name = crypto;
 			productName = crypto;
 			productReference = 1A0115871B910F04001E4035 /* libcrypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1A01158B1B910F0A001E4035 /* ssl OS X */ = {
+		1A01158B1B910F0A001E4035 /* ssl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl OS X" */;
+			buildConfigurationList = 1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl" */;
 			buildPhases = (
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ssl OS X";
+			name = ssl;
 			productName = crypto;
 			productReference = 1A0115921B910F0A001E4035 /* libssl.a */;
 			productType = "com.apple.product-type.library.static";
@@ -826,10 +847,14 @@
 			buildPhases = (
 				1AB548A51B8F869A001DA8CD /* Build Library */,
 				1A11D40F1B8D6F0900F9A353 /* Headers */,
+				1A01160A1B9185D6001E4035 /* Sources */,
+				1A0116131B918A7A001E4035 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A01160E1B918709001E4035 /* PBXTargetDependency */,
+				1A01160C1B918706001E4035 /* PBXTargetDependency */,
 			);
 			name = "OpenSSL OS X";
 			productName = OpenSSL;
@@ -906,11 +931,11 @@
 			projectRoot = "";
 			targets = (
 				1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */,
+				1A0115961B910FCF001E4035 /* OpenSSLTests OS X */,
 				1A11D4C91B8D7EDE00F9A353 /* OpenSSL iOS */,
 				1A11D5321B8D84B900F9A353 /* OpenSSL WatchOS */,
-				1A0115861B910F04001E4035 /* crypto OS X */,
-				1A01158B1B910F0A001E4035 /* ssl OS X */,
-				1A0115961B910FCF001E4035 /* OpenSSLTests OS X */,
+				1A0115861B910F04001E4035 /* crypto */,
+				1A01158B1B910F0A001E4035 /* ssl */,
 			);
 		};
 /* End PBXProject section */
@@ -965,6 +990,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A01160A1B9185D6001E4035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A11D4CC1B8D7EDE00F9A353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -986,6 +1018,16 @@
 			isa = PBXTargetDependency;
 			target = 1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */;
 			targetProxy = 1A01159D1B910FD0001E4035 /* PBXContainerItemProxy */;
+		};
+		1A01160C1B918706001E4035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0115861B910F04001E4035 /* crypto */;
+			targetProxy = 1A01160B1B918706001E4035 /* PBXContainerItemProxy */;
+		};
+		1A01160E1B918709001E4035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A01158B1B910F0A001E4035 /* ssl */;
+			targetProxy = 1A01160D1B918709001E4035 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1609,15 +1651,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto OS X" */ = {
+		1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0115881B910F04001E4035 /* Debug */,
 				1A0115891B910F04001E4035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl OS X" */ = {
+		1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0115901B910F0A001E4035 /* Debug */,
@@ -1633,6 +1676,7 @@
 				1A0115A11B910FD0001E4035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A11D4191B8D6F0900F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL OS X" */ = {
 			isa = XCConfigurationList;
