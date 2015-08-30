@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+               BlueprintIdentifier = "1A0116611B93AE94001E4035"
                BuildableName = "OpenSSL.framework"
                BlueprintName = "OpenSSL iOS"
                ReferencedContainer = "container:openssl.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+            BlueprintIdentifier = "1A0116611B93AE94001E4035"
             BuildableName = "OpenSSL.framework"
             BlueprintName = "OpenSSL iOS"
             ReferencedContainer = "container:openssl.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A11D4C91B8D7EDE00F9A353"
+            BlueprintIdentifier = "1A0116611B93AE94001E4035"
             BuildableName = "OpenSSL.framework"
             BlueprintName = "OpenSSL iOS"
             ReferencedContainer = "container:openssl.xcodeproj">

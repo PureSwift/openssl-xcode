@@ -9,8 +9,85 @@
 /* Begin PBXBuildFile section */
 		1A01159A1B910FD0001E4035 /* OpenSSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0115991B910FD0001E4035 /* OpenSSLTests.swift */; };
 		1A01159C1B910FD0001E4035 /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */; settings = {ASSET_TAGS = (); }; };
-		1A01163E1B93A2B1001E4035 /* libcrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0116251B921B87001E4035 /* libcrypto.framework */; };
-		1A01163F1B93A2B1001E4035 /* libssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0116371B921BFF001E4035 /* libssl.framework */; };
+		1A0116401B93AAAA001E4035 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115871B910F04001E4035 /* libcrypto.a */; };
+		1A0116411B93AAAA001E4035 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0115921B910F0A001E4035 /* libssl.a */; };
+		1A01166B1B93AF73001E4035 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1A01166C1B93AF73001E4035 /* numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42B1B8D7A7F00F9A353 /* numbers.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1A01166D1B93AF73001E4035 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1A01166E1B93AF73001E4035 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1A01166F1B93AF84001E4035 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42F1B8D7A7F00F9A353 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116701B93AF84001E4035 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4301B8D7A7F00F9A353 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116711B93AF84001E4035 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4311B8D7A7F00F9A353 /* asn1t.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116721B93AF84001E4035 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4321B8D7A7F00F9A353 /* bio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116731B93AF84001E4035 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4331B8D7A7F00F9A353 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116741B93AF84001E4035 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4341B8D7A7F00F9A353 /* bn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116751B93AF84001E4035 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4351B8D7A7F00F9A353 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116761B93AF84001E4035 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4361B8D7A7F00F9A353 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116771B93AF84001E4035 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4371B8D7A7F00F9A353 /* cast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116781B93AF84001E4035 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4381B8D7A7F00F9A353 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116791B93AF84001E4035 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4391B8D7A7F00F9A353 /* cms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167A1B93AF84001E4035 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43A1B8D7A7F00F9A353 /* comp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167B1B93AF84001E4035 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43B1B8D7A7F00F9A353 /* conf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167C1B93AF85001E4035 /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43C1B8D7A7F00F9A353 /* conf_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167D1B93AF85001E4035 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43D1B8D7A7F00F9A353 /* crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167E1B93AF85001E4035 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43E1B8D7A7F00F9A353 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01167F1B93AF85001E4035 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43F1B8D7A7F00F9A353 /* dh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116801B93AF85001E4035 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4401B8D7A7F00F9A353 /* dsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116811B93AF85001E4035 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4411B8D7A7F00F9A353 /* dso.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116821B93AF85001E4035 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4421B8D7A7F00F9A353 /* dtls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116831B93AF85001E4035 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4431B8D7A7F00F9A353 /* e_os2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116841B93AF85001E4035 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4441B8D7A7F00F9A353 /* ebcdic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116851B93AF85001E4035 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4451B8D7A7F00F9A353 /* ec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116861B93AF85001E4035 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4461B8D7A7F00F9A353 /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116871B93AF85001E4035 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4471B8D7A7F00F9A353 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116881B93AF85001E4035 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4481B8D7A7F00F9A353 /* engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116891B93AF85001E4035 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4491B8D7A7F00F9A353 /* err.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168A1B93AF85001E4035 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44A1B8D7A7F00F9A353 /* evp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168B1B93AF85001E4035 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44B1B8D7A7F00F9A353 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168C1B93AF85001E4035 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44C1B8D7A7F00F9A353 /* idea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168D1B93AF85001E4035 /* jpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44D1B8D7A7F00F9A353 /* jpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168E1B93AF85001E4035 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44E1B8D7A7F00F9A353 /* lhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01168F1B93AF85001E4035 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44F1B8D7A7F00F9A353 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116901B93AF85001E4035 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4501B8D7A7F00F9A353 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116911B93AF85001E4035 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4511B8D7A7F00F9A353 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116921B93AF85001E4035 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4521B8D7A7F00F9A353 /* mdc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116931B93AF85001E4035 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4531B8D7A7F00F9A353 /* modes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116941B93AF85001E4035 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4541B8D7A7F00F9A353 /* obj_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116951B93AF85001E4035 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4551B8D7A7F00F9A353 /* objects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116961B93AF85001E4035 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4561B8D7A7F00F9A353 /* ocsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116971B93AF85001E4035 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4571B8D7A7F00F9A353 /* opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116981B93AF85001E4035 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4591B8D7A7F00F9A353 /* opensslv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116991B93AF85001E4035 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45A1B8D7A7F00F9A353 /* ossl_typ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169A1B93AF85001E4035 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45B1B8D7A7F00F9A353 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169B1B93AF85001E4035 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45C1B8D7A7F00F9A353 /* pem2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169C1B93AF85001E4035 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45D1B8D7A7F00F9A353 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169D1B93AF85001E4035 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45E1B8D7A7F00F9A353 /* pkcs7.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169E1B93AF85001E4035 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45F1B8D7A7F00F9A353 /* pqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A01169F1B93AF85001E4035 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4601B8D7A7F00F9A353 /* rand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A01B93AF85001E4035 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4611B8D7A7F00F9A353 /* rc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A11B93AF85001E4035 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4621B8D7A7F00F9A353 /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A21B93AF85001E4035 /* rc5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4631B8D7A7F00F9A353 /* rc5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A31B93AF85001E4035 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4641B8D7A7F00F9A353 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A41B93AF85001E4035 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4651B8D7A7F00F9A353 /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A51B93AF85001E4035 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4661B8D7A7F00F9A353 /* safestack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A61B93AF85001E4035 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4671B8D7A7F00F9A353 /* seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A71B93AF85001E4035 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4681B8D7A7F00F9A353 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A81B93AF85001E4035 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4691B8D7A7F00F9A353 /* srp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116A91B93AF85001E4035 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46A1B8D7A7F00F9A353 /* srtp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AA1B93AF85001E4035 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46B1B8D7A7F00F9A353 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AB1B93AF85001E4035 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46C1B8D7A7F00F9A353 /* ssl2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AC1B93AF85001E4035 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46D1B8D7A7F00F9A353 /* ssl3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AD1B93AF85001E4035 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46E1B8D7A7F00F9A353 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AE1B93AF85001E4035 /* store.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46F1B8D7A7F00F9A353 /* store.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116AF1B93AF85001E4035 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4701B8D7A7F00F9A353 /* symhacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B01B93AF85001E4035 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4711B8D7A7F00F9A353 /* tls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B11B93AF85001E4035 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4721B8D7A7F00F9A353 /* ts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B21B93AF85001E4035 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4731B8D7A7F00F9A353 /* txt_db.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B31B93AF85001E4035 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4741B8D7A7F00F9A353 /* ui.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B41B93AF85001E4035 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4751B8D7A7F00F9A353 /* whrlpool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B51B93AF85001E4035 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4761B8D7A7F00F9A353 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B61B93AF85001E4035 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4771B8D7A7F00F9A353 /* x509_vfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0116B71B93AF85001E4035 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4781B8D7A7F00F9A353 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4791B8D7A7F00F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D47A1B8D7A7F00F9A353 /* numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42B1B8D7A7F00F9A353 /* numbers.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A11D47B1B8D7A7F00F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -88,160 +165,6 @@
 		1A11D4C41B8D7A8800F9A353 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4761B8D7A7F00F9A353 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4C51B8D7A8800F9A353 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4771B8D7A7F00F9A353 /* x509_vfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A11D4C61B8D7A8800F9A353 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4781B8D7A7F00F9A353 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D01B8D7EDE00F9A353 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44A1B8D7A7F00F9A353 /* evp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D11B8D7EDE00F9A353 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4781B8D7A7F00F9A353 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D21B8D7EDE00F9A353 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4511B8D7A7F00F9A353 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D31B8D7EDE00F9A353 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4461B8D7A7F00F9A353 /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D41B8D7EDE00F9A353 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44E1B8D7A7F00F9A353 /* lhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D51B8D7EDE00F9A353 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4621B8D7A7F00F9A353 /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D61B8D7EDE00F9A353 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4341B8D7A7F00F9A353 /* bn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D71B8D7EDE00F9A353 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4321B8D7A7F00F9A353 /* bio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D81B8D7EDE00F9A353 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42F1B8D7A7F00F9A353 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4D91B8D7EDE00F9A353 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4651B8D7A7F00F9A353 /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DA1B8D7EDE00F9A353 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4491B8D7A7F00F9A353 /* err.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DB1B8D7EDE00F9A353 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4661B8D7A7F00F9A353 /* safestack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DC1B8D7EDE00F9A353 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4361B8D7A7F00F9A353 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DD1B8D7EDE00F9A353 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4571B8D7A7F00F9A353 /* opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DE1B8D7EDE00F9A353 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4711B8D7A7F00F9A353 /* tls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4DF1B8D7EDE00F9A353 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4401B8D7A7F00F9A353 /* dsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E01B8D7EDE00F9A353 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4611B8D7A7F00F9A353 /* rc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E11B8D7EDE00F9A353 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4301B8D7A7F00F9A353 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E21B8D7EDE00F9A353 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4381B8D7A7F00F9A353 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E31B8D7EDE00F9A353 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4701B8D7A7F00F9A353 /* symhacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E41B8D7EDE00F9A353 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45A1B8D7A7F00F9A353 /* ossl_typ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E51B8D7EDE00F9A353 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46C1B8D7A7F00F9A353 /* ssl2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E61B8D7EDE00F9A353 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4371B8D7A7F00F9A353 /* cast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E71B8D7EDE00F9A353 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4551B8D7A7F00F9A353 /* objects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E81B8D7EDE00F9A353 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4471B8D7A7F00F9A353 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4E91B8D7EDE00F9A353 /* numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42B1B8D7A7F00F9A353 /* numbers.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D4EA1B8D7EDE00F9A353 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45F1B8D7A7F00F9A353 /* pqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4EB1B8D7EDE00F9A353 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4531B8D7A7F00F9A353 /* modes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4EC1B8D7EDE00F9A353 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4411B8D7A7F00F9A353 /* dso.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4ED1B8D7EDE00F9A353 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45D1B8D7A7F00F9A353 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4EE1B8D7EDE00F9A353 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45C1B8D7A7F00F9A353 /* pem2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4EF1B8D7EDE00F9A353 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43A1B8D7A7F00F9A353 /* comp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F01B8D7EDE00F9A353 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4731B8D7A7F00F9A353 /* txt_db.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F11B8D7EDE00F9A353 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4331B8D7A7F00F9A353 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F21B8D7EDE00F9A353 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45B1B8D7A7F00F9A353 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F31B8D7EDE00F9A353 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4561B8D7A7F00F9A353 /* ocsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F41B8D7EDE00F9A353 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43B1B8D7A7F00F9A353 /* conf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F51B8D7EDE00F9A353 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4741B8D7A7F00F9A353 /* ui.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F61B8D7EDE00F9A353 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4501B8D7A7F00F9A353 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F71B8D7EDE00F9A353 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4601B8D7A7F00F9A353 /* rand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F81B8D7EDE00F9A353 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44B1B8D7A7F00F9A353 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4F91B8D7EDE00F9A353 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4641B8D7A7F00F9A353 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FA1B8D7EDE00F9A353 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4431B8D7A7F00F9A353 /* e_os2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FB1B8D7EDE00F9A353 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46A1B8D7A7F00F9A353 /* srtp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FC1B8D7EDE00F9A353 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4421B8D7A7F00F9A353 /* dtls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FD1B8D7EDE00F9A353 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44C1B8D7A7F00F9A353 /* idea.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FE1B8D7EDE00F9A353 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4771B8D7A7F00F9A353 /* x509_vfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D4FF1B8D7EDE00F9A353 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4311B8D7A7F00F9A353 /* asn1t.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5001B8D7EDE00F9A353 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4591B8D7A7F00F9A353 /* opensslv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5011B8D7EDE00F9A353 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4351B8D7A7F00F9A353 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5021B8D7EDE00F9A353 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46B1B8D7A7F00F9A353 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5031B8D7EDE00F9A353 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4541B8D7A7F00F9A353 /* obj_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5041B8D7EDE00F9A353 /* jpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44D1B8D7A7F00F9A353 /* jpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5051B8D7EDE00F9A353 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4671B8D7A7F00F9A353 /* seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5061B8D7EDE00F9A353 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4751B8D7A7F00F9A353 /* whrlpool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5071B8D7EDE00F9A353 /* rc5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4631B8D7A7F00F9A353 /* rc5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5081B8D7EDE00F9A353 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4681B8D7A7F00F9A353 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5091B8D7EDE00F9A353 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43E1B8D7A7F00F9A353 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50A1B8D7EDE00F9A353 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43F1B8D7A7F00F9A353 /* dh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50B1B8D7EDE00F9A353 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4721B8D7A7F00F9A353 /* ts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50C1B8D7EDE00F9A353 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4451B8D7A7F00F9A353 /* ec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50D1B8D7EDE00F9A353 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4481B8D7A7F00F9A353 /* engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50E1B8D7EDE00F9A353 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4691B8D7A7F00F9A353 /* srp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D50F1B8D7EDE00F9A353 /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43C1B8D7A7F00F9A353 /* conf_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5101B8D7EDE00F9A353 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4391B8D7A7F00F9A353 /* cms.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5111B8D7EDE00F9A353 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4761B8D7A7F00F9A353 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5121B8D7EDE00F9A353 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4441B8D7A7F00F9A353 /* ebcdic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5131B8D7EDE00F9A353 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46D1B8D7A7F00F9A353 /* ssl3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5141B8D7EDE00F9A353 /* store.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46F1B8D7A7F00F9A353 /* store.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5151B8D7EDE00F9A353 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44F1B8D7A7F00F9A353 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5161B8D7EDE00F9A353 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45E1B8D7A7F00F9A353 /* pkcs7.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5171B8D7EDE00F9A353 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43D1B8D7A7F00F9A353 /* crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5181B8D7EDE00F9A353 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4521B8D7A7F00F9A353 /* mdc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5191B8D7EDE00F9A353 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46E1B8D7A7F00F9A353 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D51A1B8D7EDE00F9A353 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D51C1B8D7EDE00F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D51D1B8D7EDE00F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D5391B8D84B900F9A353 /* evp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44A1B8D7A7F00F9A353 /* evp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53A1B8D84B900F9A353 /* x509v3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4781B8D7A7F00F9A353 /* x509v3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53B1B8D84B900F9A353 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4511B8D7A7F00F9A353 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53C1B8D84B900F9A353 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4461B8D7A7F00F9A353 /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53D1B8D84B900F9A353 /* lhash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44E1B8D7A7F00F9A353 /* lhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53E1B8D84B900F9A353 /* rc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4621B8D7A7F00F9A353 /* rc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D53F1B8D84B900F9A353 /* bn.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4341B8D7A7F00F9A353 /* bn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5401B8D84B900F9A353 /* bio.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4321B8D7A7F00F9A353 /* bio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5411B8D84B900F9A353 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42F1B8D7A7F00F9A353 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5421B8D84B900F9A353 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4651B8D7A7F00F9A353 /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5431B8D84B900F9A353 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4491B8D7A7F00F9A353 /* err.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5441B8D84B900F9A353 /* safestack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4661B8D7A7F00F9A353 /* safestack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5451B8D84B900F9A353 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4361B8D7A7F00F9A353 /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5461B8D84B900F9A353 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4571B8D7A7F00F9A353 /* opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5471B8D84B900F9A353 /* tls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4711B8D7A7F00F9A353 /* tls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5481B8D84B900F9A353 /* dsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4401B8D7A7F00F9A353 /* dsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5491B8D84B900F9A353 /* rc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4611B8D7A7F00F9A353 /* rc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54A1B8D84B900F9A353 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4301B8D7A7F00F9A353 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54B1B8D84B900F9A353 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4381B8D7A7F00F9A353 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54C1B8D84B900F9A353 /* symhacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4701B8D7A7F00F9A353 /* symhacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54D1B8D84B900F9A353 /* ossl_typ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45A1B8D7A7F00F9A353 /* ossl_typ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54E1B8D84B900F9A353 /* ssl2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46C1B8D7A7F00F9A353 /* ssl2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D54F1B8D84B900F9A353 /* cast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4371B8D7A7F00F9A353 /* cast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5501B8D84B900F9A353 /* objects.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4551B8D7A7F00F9A353 /* objects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5511B8D84B900F9A353 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4471B8D7A7F00F9A353 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5521B8D84B900F9A353 /* numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42B1B8D7A7F00F9A353 /* numbers.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D5531B8D84B900F9A353 /* pqueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45F1B8D7A7F00F9A353 /* pqueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5541B8D84B900F9A353 /* modes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4531B8D7A7F00F9A353 /* modes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5551B8D84B900F9A353 /* dso.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4411B8D7A7F00F9A353 /* dso.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5561B8D84B900F9A353 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45D1B8D7A7F00F9A353 /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5571B8D84B900F9A353 /* pem2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45C1B8D7A7F00F9A353 /* pem2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5581B8D84B900F9A353 /* comp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43A1B8D7A7F00F9A353 /* comp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5591B8D84B900F9A353 /* txt_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4731B8D7A7F00F9A353 /* txt_db.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55A1B8D84B900F9A353 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4331B8D7A7F00F9A353 /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55B1B8D84B900F9A353 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45B1B8D7A7F00F9A353 /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55C1B8D84B900F9A353 /* ocsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4561B8D7A7F00F9A353 /* ocsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55D1B8D84B900F9A353 /* conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43B1B8D7A7F00F9A353 /* conf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55E1B8D84B900F9A353 /* ui.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4741B8D7A7F00F9A353 /* ui.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D55F1B8D84B900F9A353 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4501B8D7A7F00F9A353 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5601B8D84B900F9A353 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4601B8D7A7F00F9A353 /* rand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5611B8D84B900F9A353 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44B1B8D7A7F00F9A353 /* hmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5621B8D84B900F9A353 /* ripemd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4641B8D7A7F00F9A353 /* ripemd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5631B8D84B900F9A353 /* e_os2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4431B8D7A7F00F9A353 /* e_os2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5641B8D84B900F9A353 /* srtp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46A1B8D7A7F00F9A353 /* srtp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5651B8D84B900F9A353 /* dtls1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4421B8D7A7F00F9A353 /* dtls1.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5661B8D84B900F9A353 /* idea.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44C1B8D7A7F00F9A353 /* idea.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5671B8D84B900F9A353 /* x509_vfy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4771B8D7A7F00F9A353 /* x509_vfy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5681B8D84B900F9A353 /* asn1t.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4311B8D7A7F00F9A353 /* asn1t.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5691B8D84B900F9A353 /* opensslv.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4591B8D7A7F00F9A353 /* opensslv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56A1B8D84B900F9A353 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4351B8D7A7F00F9A353 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56B1B8D84B900F9A353 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46B1B8D7A7F00F9A353 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56C1B8D84B900F9A353 /* obj_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4541B8D7A7F00F9A353 /* obj_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56D1B8D84B900F9A353 /* jpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44D1B8D7A7F00F9A353 /* jpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56E1B8D84B900F9A353 /* seed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4671B8D7A7F00F9A353 /* seed.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D56F1B8D84B900F9A353 /* whrlpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4751B8D7A7F00F9A353 /* whrlpool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5701B8D84B900F9A353 /* rc5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4631B8D7A7F00F9A353 /* rc5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5711B8D84B900F9A353 /* sha.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4681B8D7A7F00F9A353 /* sha.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5721B8D84B900F9A353 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43E1B8D7A7F00F9A353 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5731B8D84B900F9A353 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43F1B8D7A7F00F9A353 /* dh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5741B8D84B900F9A353 /* ts.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4721B8D7A7F00F9A353 /* ts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5751B8D84B900F9A353 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4451B8D7A7F00F9A353 /* ec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5761B8D84B900F9A353 /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4481B8D7A7F00F9A353 /* engine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5771B8D84B900F9A353 /* srp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4691B8D7A7F00F9A353 /* srp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5781B8D84B900F9A353 /* conf_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43C1B8D7A7F00F9A353 /* conf_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5791B8D84B900F9A353 /* cms.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4391B8D7A7F00F9A353 /* cms.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57A1B8D84B900F9A353 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4761B8D7A7F00F9A353 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57B1B8D84B900F9A353 /* ebcdic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4441B8D7A7F00F9A353 /* ebcdic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57C1B8D84B900F9A353 /* ssl3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46D1B8D7A7F00F9A353 /* ssl3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57D1B8D84B900F9A353 /* store.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46F1B8D7A7F00F9A353 /* store.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57E1B8D84B900F9A353 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D44F1B8D7A7F00F9A353 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D57F1B8D84B900F9A353 /* pkcs7.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D45E1B8D7A7F00F9A353 /* pkcs7.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5801B8D84B900F9A353 /* crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D43D1B8D7A7F00F9A353 /* crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5811B8D84B900F9A353 /* mdc2.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D4521B8D7A7F00F9A353 /* mdc2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5821B8D84B900F9A353 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D46E1B8D7A7F00F9A353 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A11D5831B8D84B900F9A353 /* o_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42D1B8D7A7F00F9A353 /* o_str.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D5841B8D84B900F9A353 /* o_dir.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42C1B8D7A7F00F9A353 /* o_dir.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1A11D5851B8D84B900F9A353 /* constant_time_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,33 +189,19 @@
 			remoteGlobalIDString = 1A01158B1B910F0A001E4035;
 			remoteInfo = ssl;
 		};
-		1A01162E1B921BD8001E4035 /* PBXContainerItemProxy */ = {
+		1A0116CA1B93B0B4001E4035 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A11D4111B8D6F0900F9A353;
-			remoteInfo = "OpenSSL OS X";
+			remoteGlobalIDString = 1A0116BB1B93B069001E4035;
+			remoteInfo = "crypto iOS";
 		};
-		1A0116321B921BFF001E4035 /* PBXContainerItemProxy */ = {
+		1A0116CC1B93B0B4001E4035 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A11D4111B8D6F0900F9A353;
-			remoteInfo = "OpenSSL OS X";
-		};
-		1A01163A1B939AAF001E4035 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A0116241B921B87001E4035;
-			remoteInfo = "libcrypto OS X";
-		};
-		1A01163C1B939AAF001E4035 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9069D12F0FCE340B0042E34C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A0116301B921BFF001E4035;
-			remoteInfo = "libssl OS X";
+			remoteGlobalIDString = 1A0116C51B93B08F001E4035;
+			remoteInfo = "ssl iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -302,8 +211,9 @@
 		1A0115971B910FCF001E4035 /* OpenSSLTests OS X.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenSSLTests OS X.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0115991B910FD0001E4035 /* OpenSSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSLTests.swift; sourceTree = "<group>"; };
 		1A01159B1B910FD0001E4035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A0116251B921B87001E4035 /* libcrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libcrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A0116371B921BFF001E4035 /* libssl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libssl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0116621B93AE94001E4035 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0116BC1B93B069001E4035 /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0116C91B93B08F001E4035 /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A11D41E1B8D704B00F9A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		1A11D42A1B8D7A7F00F9A353 /* constant_time_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constant_time_locl.h; sourceTree = "<group>"; };
@@ -384,8 +294,6 @@
 		1A11D4761B8D7A7F00F9A353 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
 		1A11D4771B8D7A7F00F9A353 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
 		1A11D4781B8D7A7F00F9A353 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
-		1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7520201B8DA880005A67E0 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -394,23 +302,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A01163E1B93A2B1001E4035 /* libcrypto.framework in Frameworks */,
-				1A01163F1B93A2B1001E4035 /* libssl.framework in Frameworks */,
 				1A01159C1B910FD0001E4035 /* OpenSSL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D4CD1B8D7EDE00F9A353 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D5361B8D84B900F9A353 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1A0116401B93AAAA001E4035 /* libcrypto.a in Frameworks */,
+				1A0116411B93AAAA001E4035 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,13 +445,12 @@
 			isa = PBXGroup;
 			children = (
 				1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */,
-				1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */,
-				1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */,
 				1A0115871B910F04001E4035 /* libcrypto.a */,
 				1A0115921B910F0A001E4035 /* libssl.a */,
 				1A0115971B910FCF001E4035 /* OpenSSLTests OS X.xctest */,
-				1A0116251B921B87001E4035 /* libcrypto.framework */,
-				1A0116371B921BFF001E4035 /* libssl.framework */,
+				1A0116621B93AE94001E4035 /* OpenSSL.framework */,
+				1A0116BC1B93B069001E4035 /* libcrypto.a */,
+				1A0116C91B93B08F001E4035 /* libssl.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -565,6 +458,90 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1A01165F1B93AE94001E4035 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0116B01B93AF85001E4035 /* tls1.h in Headers */,
+				1A0116AB1B93AF85001E4035 /* ssl2.h in Headers */,
+				1A0116A11B93AF85001E4035 /* rc4.h in Headers */,
+				1A0116771B93AF84001E4035 /* cast.h in Headers */,
+				1A01167F1B93AF85001E4035 /* dh.h in Headers */,
+				1A0116841B93AF85001E4035 /* ebcdic.h in Headers */,
+				1A0116911B93AF85001E4035 /* md5.h in Headers */,
+				1A0116A61B93AF85001E4035 /* seed.h in Headers */,
+				1A0116A41B93AF85001E4035 /* rsa.h in Headers */,
+				1A0116B41B93AF85001E4035 /* whrlpool.h in Headers */,
+				1A0116741B93AF84001E4035 /* bn.h in Headers */,
+				1A0116B71B93AF85001E4035 /* x509v3.h in Headers */,
+				1A0116961B93AF85001E4035 /* ocsp.h in Headers */,
+				1A01169D1B93AF85001E4035 /* pkcs7.h in Headers */,
+				1A01167B1B93AF84001E4035 /* conf.h in Headers */,
+				1A0116831B93AF85001E4035 /* e_os2.h in Headers */,
+				1A0116B51B93AF85001E4035 /* x509.h in Headers */,
+				1A01168A1B93AF85001E4035 /* evp.h in Headers */,
+				1A0116AA1B93AF85001E4035 /* ssl.h in Headers */,
+				1A01169F1B93AF85001E4035 /* rand.h in Headers */,
+				1A0116AD1B93AF85001E4035 /* stack.h in Headers */,
+				1A0116A31B93AF85001E4035 /* ripemd.h in Headers */,
+				1A0116781B93AF84001E4035 /* cmac.h in Headers */,
+				1A01166E1B93AF73001E4035 /* o_str.h in Headers */,
+				1A0116AF1B93AF85001E4035 /* symhacks.h in Headers */,
+				1A0116921B93AF85001E4035 /* mdc2.h in Headers */,
+				1A0116981B93AF85001E4035 /* opensslv.h in Headers */,
+				1A01168C1B93AF85001E4035 /* idea.h in Headers */,
+				1A0116951B93AF85001E4035 /* objects.h in Headers */,
+				1A0116861B93AF85001E4035 /* ecdh.h in Headers */,
+				1A0116871B93AF85001E4035 /* ecdsa.h in Headers */,
+				1A01166D1B93AF73001E4035 /* o_dir.h in Headers */,
+				1A0116971B93AF85001E4035 /* opensslconf.h in Headers */,
+				1A0116B11B93AF85001E4035 /* ts.h in Headers */,
+				1A01166B1B93AF73001E4035 /* constant_time_locl.h in Headers */,
+				1A0116B61B93AF85001E4035 /* x509_vfy.h in Headers */,
+				1A01168D1B93AF85001E4035 /* jpake.h in Headers */,
+				1A0116851B93AF85001E4035 /* ec.h in Headers */,
+				1A01167E1B93AF85001E4035 /* des.h in Headers */,
+				1A0116791B93AF84001E4035 /* cms.h in Headers */,
+				1A0116701B93AF84001E4035 /* asn1.h in Headers */,
+				1A0116801B93AF85001E4035 /* dsa.h in Headers */,
+				1A01169E1B93AF85001E4035 /* pqueue.h in Headers */,
+				1A0116AC1B93AF85001E4035 /* ssl3.h in Headers */,
+				1A01167C1B93AF85001E4035 /* conf_api.h in Headers */,
+				1A01168E1B93AF85001E4035 /* lhash.h in Headers */,
+				1A0116881B93AF85001E4035 /* engine.h in Headers */,
+				1A0116891B93AF85001E4035 /* err.h in Headers */,
+				1A0116A91B93AF85001E4035 /* srtp.h in Headers */,
+				1A0116901B93AF85001E4035 /* md4.h in Headers */,
+				1A0116A81B93AF85001E4035 /* srp.h in Headers */,
+				1A0116811B93AF85001E4035 /* dso.h in Headers */,
+				1A01168B1B93AF85001E4035 /* hmac.h in Headers */,
+				1A0116A01B93AF85001E4035 /* rc2.h in Headers */,
+				1A0116731B93AF84001E4035 /* blowfish.h in Headers */,
+				1A01166F1B93AF84001E4035 /* aes.h in Headers */,
+				1A0116A51B93AF85001E4035 /* safestack.h in Headers */,
+				1A0116991B93AF85001E4035 /* ossl_typ.h in Headers */,
+				1A01168F1B93AF85001E4035 /* md2.h in Headers */,
+				1A0116751B93AF84001E4035 /* buffer.h in Headers */,
+				1A01169B1B93AF85001E4035 /* pem2.h in Headers */,
+				1A0116AE1B93AF85001E4035 /* store.h in Headers */,
+				1A0116B31B93AF85001E4035 /* ui.h in Headers */,
+				1A0116931B93AF85001E4035 /* modes.h in Headers */,
+				1A0116B21B93AF85001E4035 /* txt_db.h in Headers */,
+				1A0116A21B93AF85001E4035 /* rc5.h in Headers */,
+				1A01167A1B93AF84001E4035 /* comp.h in Headers */,
+				1A0116761B93AF84001E4035 /* camellia.h in Headers */,
+				1A01167D1B93AF85001E4035 /* crypto.h in Headers */,
+				1A0116721B93AF84001E4035 /* bio.h in Headers */,
+				1A01169C1B93AF85001E4035 /* pkcs12.h in Headers */,
+				1A0116821B93AF85001E4035 /* dtls1.h in Headers */,
+				1A0116711B93AF84001E4035 /* asn1t.h in Headers */,
+				1A0116A71B93AF85001E4035 /* sha.h in Headers */,
+				1A01169A1B93AF85001E4035 /* pem.h in Headers */,
+				1A0116941B93AF85001E4035 /* obj_mac.h in Headers */,
+				1A01166C1B93AF73001E4035 /* numbers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A11D40F1B8D6F0900F9A353 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,201 +626,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A11D4CF1B8D7EDE00F9A353 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A11D4D01B8D7EDE00F9A353 /* evp.h in Headers */,
-				1A11D4D11B8D7EDE00F9A353 /* x509v3.h in Headers */,
-				1A11D4D21B8D7EDE00F9A353 /* md5.h in Headers */,
-				1A11D4D31B8D7EDE00F9A353 /* ecdh.h in Headers */,
-				1A11D4D41B8D7EDE00F9A353 /* lhash.h in Headers */,
-				1A11D4D51B8D7EDE00F9A353 /* rc4.h in Headers */,
-				1A11D4D61B8D7EDE00F9A353 /* bn.h in Headers */,
-				1A11D4D71B8D7EDE00F9A353 /* bio.h in Headers */,
-				1A11D4D81B8D7EDE00F9A353 /* aes.h in Headers */,
-				1A11D4D91B8D7EDE00F9A353 /* rsa.h in Headers */,
-				1A11D4DA1B8D7EDE00F9A353 /* err.h in Headers */,
-				1A11D4DB1B8D7EDE00F9A353 /* safestack.h in Headers */,
-				1A11D4DC1B8D7EDE00F9A353 /* camellia.h in Headers */,
-				1A11D4DD1B8D7EDE00F9A353 /* opensslconf.h in Headers */,
-				1A11D4DE1B8D7EDE00F9A353 /* tls1.h in Headers */,
-				1A11D4DF1B8D7EDE00F9A353 /* dsa.h in Headers */,
-				1A11D4E01B8D7EDE00F9A353 /* rc2.h in Headers */,
-				1A11D4E11B8D7EDE00F9A353 /* asn1.h in Headers */,
-				1A11D4E21B8D7EDE00F9A353 /* cmac.h in Headers */,
-				1A11D4E31B8D7EDE00F9A353 /* symhacks.h in Headers */,
-				1A11D4E41B8D7EDE00F9A353 /* ossl_typ.h in Headers */,
-				1A11D4E51B8D7EDE00F9A353 /* ssl2.h in Headers */,
-				1A11D4E61B8D7EDE00F9A353 /* cast.h in Headers */,
-				1A11D4E71B8D7EDE00F9A353 /* objects.h in Headers */,
-				1A11D4E81B8D7EDE00F9A353 /* ecdsa.h in Headers */,
-				1A11D4E91B8D7EDE00F9A353 /* numbers.h in Headers */,
-				1A11D4EA1B8D7EDE00F9A353 /* pqueue.h in Headers */,
-				1A11D4EB1B8D7EDE00F9A353 /* modes.h in Headers */,
-				1A11D4EC1B8D7EDE00F9A353 /* dso.h in Headers */,
-				1A11D4ED1B8D7EDE00F9A353 /* pkcs12.h in Headers */,
-				1A11D4EE1B8D7EDE00F9A353 /* pem2.h in Headers */,
-				1A11D4EF1B8D7EDE00F9A353 /* comp.h in Headers */,
-				1A11D4F01B8D7EDE00F9A353 /* txt_db.h in Headers */,
-				1A11D4F11B8D7EDE00F9A353 /* blowfish.h in Headers */,
-				1A11D4F21B8D7EDE00F9A353 /* pem.h in Headers */,
-				1A11D4F31B8D7EDE00F9A353 /* ocsp.h in Headers */,
-				1A11D4F41B8D7EDE00F9A353 /* conf.h in Headers */,
-				1A11D4F51B8D7EDE00F9A353 /* ui.h in Headers */,
-				1A11D4F61B8D7EDE00F9A353 /* md4.h in Headers */,
-				1A11D4F71B8D7EDE00F9A353 /* rand.h in Headers */,
-				1A11D4F81B8D7EDE00F9A353 /* hmac.h in Headers */,
-				1A11D4F91B8D7EDE00F9A353 /* ripemd.h in Headers */,
-				1A11D4FA1B8D7EDE00F9A353 /* e_os2.h in Headers */,
-				1A11D4FB1B8D7EDE00F9A353 /* srtp.h in Headers */,
-				1A11D4FC1B8D7EDE00F9A353 /* dtls1.h in Headers */,
-				1A11D4FD1B8D7EDE00F9A353 /* idea.h in Headers */,
-				1A11D4FE1B8D7EDE00F9A353 /* x509_vfy.h in Headers */,
-				1A11D4FF1B8D7EDE00F9A353 /* asn1t.h in Headers */,
-				1A11D5001B8D7EDE00F9A353 /* opensslv.h in Headers */,
-				1A11D5011B8D7EDE00F9A353 /* buffer.h in Headers */,
-				1A11D5021B8D7EDE00F9A353 /* ssl.h in Headers */,
-				1A11D5031B8D7EDE00F9A353 /* obj_mac.h in Headers */,
-				1A11D5041B8D7EDE00F9A353 /* jpake.h in Headers */,
-				1A11D5051B8D7EDE00F9A353 /* seed.h in Headers */,
-				1A11D5061B8D7EDE00F9A353 /* whrlpool.h in Headers */,
-				1A11D5071B8D7EDE00F9A353 /* rc5.h in Headers */,
-				1A11D5081B8D7EDE00F9A353 /* sha.h in Headers */,
-				1A11D5091B8D7EDE00F9A353 /* des.h in Headers */,
-				1A11D50A1B8D7EDE00F9A353 /* dh.h in Headers */,
-				1A11D50B1B8D7EDE00F9A353 /* ts.h in Headers */,
-				1A11D50C1B8D7EDE00F9A353 /* ec.h in Headers */,
-				1A11D50D1B8D7EDE00F9A353 /* engine.h in Headers */,
-				1A11D50E1B8D7EDE00F9A353 /* srp.h in Headers */,
-				1A11D50F1B8D7EDE00F9A353 /* conf_api.h in Headers */,
-				1A11D5101B8D7EDE00F9A353 /* cms.h in Headers */,
-				1A11D5111B8D7EDE00F9A353 /* x509.h in Headers */,
-				1A11D5121B8D7EDE00F9A353 /* ebcdic.h in Headers */,
-				1A11D5131B8D7EDE00F9A353 /* ssl3.h in Headers */,
-				1A11D5141B8D7EDE00F9A353 /* store.h in Headers */,
-				1A11D5151B8D7EDE00F9A353 /* md2.h in Headers */,
-				1A11D5161B8D7EDE00F9A353 /* pkcs7.h in Headers */,
-				1A11D5171B8D7EDE00F9A353 /* crypto.h in Headers */,
-				1A11D5181B8D7EDE00F9A353 /* mdc2.h in Headers */,
-				1A11D5191B8D7EDE00F9A353 /* stack.h in Headers */,
-				1A11D51A1B8D7EDE00F9A353 /* o_str.h in Headers */,
-				1A11D51C1B8D7EDE00F9A353 /* o_dir.h in Headers */,
-				1A11D51D1B8D7EDE00F9A353 /* constant_time_locl.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D5381B8D84B900F9A353 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A11D5391B8D84B900F9A353 /* evp.h in Headers */,
-				1A11D53A1B8D84B900F9A353 /* x509v3.h in Headers */,
-				1A11D53B1B8D84B900F9A353 /* md5.h in Headers */,
-				1A11D53C1B8D84B900F9A353 /* ecdh.h in Headers */,
-				1A11D53D1B8D84B900F9A353 /* lhash.h in Headers */,
-				1A11D53E1B8D84B900F9A353 /* rc4.h in Headers */,
-				1A11D53F1B8D84B900F9A353 /* bn.h in Headers */,
-				1A11D5401B8D84B900F9A353 /* bio.h in Headers */,
-				1A11D5411B8D84B900F9A353 /* aes.h in Headers */,
-				1A11D5421B8D84B900F9A353 /* rsa.h in Headers */,
-				1A11D5431B8D84B900F9A353 /* err.h in Headers */,
-				1A11D5441B8D84B900F9A353 /* safestack.h in Headers */,
-				1A11D5451B8D84B900F9A353 /* camellia.h in Headers */,
-				1A11D5461B8D84B900F9A353 /* opensslconf.h in Headers */,
-				1A11D5471B8D84B900F9A353 /* tls1.h in Headers */,
-				1A11D5481B8D84B900F9A353 /* dsa.h in Headers */,
-				1A11D5491B8D84B900F9A353 /* rc2.h in Headers */,
-				1A11D54A1B8D84B900F9A353 /* asn1.h in Headers */,
-				1A11D54B1B8D84B900F9A353 /* cmac.h in Headers */,
-				1A11D54C1B8D84B900F9A353 /* symhacks.h in Headers */,
-				1A11D54D1B8D84B900F9A353 /* ossl_typ.h in Headers */,
-				1A11D54E1B8D84B900F9A353 /* ssl2.h in Headers */,
-				1A11D54F1B8D84B900F9A353 /* cast.h in Headers */,
-				1A11D5501B8D84B900F9A353 /* objects.h in Headers */,
-				1A11D5511B8D84B900F9A353 /* ecdsa.h in Headers */,
-				1A11D5521B8D84B900F9A353 /* numbers.h in Headers */,
-				1A11D5531B8D84B900F9A353 /* pqueue.h in Headers */,
-				1A11D5541B8D84B900F9A353 /* modes.h in Headers */,
-				1A11D5551B8D84B900F9A353 /* dso.h in Headers */,
-				1A11D5561B8D84B900F9A353 /* pkcs12.h in Headers */,
-				1A11D5571B8D84B900F9A353 /* pem2.h in Headers */,
-				1A11D5581B8D84B900F9A353 /* comp.h in Headers */,
-				1A11D5591B8D84B900F9A353 /* txt_db.h in Headers */,
-				1A11D55A1B8D84B900F9A353 /* blowfish.h in Headers */,
-				1A11D55B1B8D84B900F9A353 /* pem.h in Headers */,
-				1A11D55C1B8D84B900F9A353 /* ocsp.h in Headers */,
-				1A11D55D1B8D84B900F9A353 /* conf.h in Headers */,
-				1A11D55E1B8D84B900F9A353 /* ui.h in Headers */,
-				1A11D55F1B8D84B900F9A353 /* md4.h in Headers */,
-				1A11D5601B8D84B900F9A353 /* rand.h in Headers */,
-				1A11D5611B8D84B900F9A353 /* hmac.h in Headers */,
-				1A11D5621B8D84B900F9A353 /* ripemd.h in Headers */,
-				1A11D5631B8D84B900F9A353 /* e_os2.h in Headers */,
-				1A11D5641B8D84B900F9A353 /* srtp.h in Headers */,
-				1A11D5651B8D84B900F9A353 /* dtls1.h in Headers */,
-				1A11D5661B8D84B900F9A353 /* idea.h in Headers */,
-				1A11D5671B8D84B900F9A353 /* x509_vfy.h in Headers */,
-				1A11D5681B8D84B900F9A353 /* asn1t.h in Headers */,
-				1A11D5691B8D84B900F9A353 /* opensslv.h in Headers */,
-				1A11D56A1B8D84B900F9A353 /* buffer.h in Headers */,
-				1A11D56B1B8D84B900F9A353 /* ssl.h in Headers */,
-				1A11D56C1B8D84B900F9A353 /* obj_mac.h in Headers */,
-				1A11D56D1B8D84B900F9A353 /* jpake.h in Headers */,
-				1A11D56E1B8D84B900F9A353 /* seed.h in Headers */,
-				1A11D56F1B8D84B900F9A353 /* whrlpool.h in Headers */,
-				1A11D5701B8D84B900F9A353 /* rc5.h in Headers */,
-				1A11D5711B8D84B900F9A353 /* sha.h in Headers */,
-				1A11D5721B8D84B900F9A353 /* des.h in Headers */,
-				1A11D5731B8D84B900F9A353 /* dh.h in Headers */,
-				1A11D5741B8D84B900F9A353 /* ts.h in Headers */,
-				1A11D5751B8D84B900F9A353 /* ec.h in Headers */,
-				1A11D5761B8D84B900F9A353 /* engine.h in Headers */,
-				1A11D5771B8D84B900F9A353 /* srp.h in Headers */,
-				1A11D5781B8D84B900F9A353 /* conf_api.h in Headers */,
-				1A11D5791B8D84B900F9A353 /* cms.h in Headers */,
-				1A11D57A1B8D84B900F9A353 /* x509.h in Headers */,
-				1A11D57B1B8D84B900F9A353 /* ebcdic.h in Headers */,
-				1A11D57C1B8D84B900F9A353 /* ssl3.h in Headers */,
-				1A11D57D1B8D84B900F9A353 /* store.h in Headers */,
-				1A11D57E1B8D84B900F9A353 /* md2.h in Headers */,
-				1A11D57F1B8D84B900F9A353 /* pkcs7.h in Headers */,
-				1A11D5801B8D84B900F9A353 /* crypto.h in Headers */,
-				1A11D5811B8D84B900F9A353 /* mdc2.h in Headers */,
-				1A11D5821B8D84B900F9A353 /* stack.h in Headers */,
-				1A11D5831B8D84B900F9A353 /* o_str.h in Headers */,
-				1A11D5841B8D84B900F9A353 /* o_dir.h in Headers */,
-				1A11D5851B8D84B900F9A353 /* constant_time_locl.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1A0115861B910F04001E4035 /* crypto */ = {
+		1A0115861B910F04001E4035 /* crypto OS X */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto" */;
+			buildConfigurationList = 1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto OS X" */;
 			buildPhases = (
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = crypto;
+			name = "crypto OS X";
 			productName = crypto;
 			productReference = 1A0115871B910F04001E4035 /* libcrypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		1A01158B1B910F0A001E4035 /* ssl */ = {
+		1A01158B1B910F0A001E4035 /* ssl OS X */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl" */;
+			buildConfigurationList = 1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl OS X" */;
 			buildPhases = (
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ssl;
+			name = "ssl OS X";
 			productName = crypto;
 			productReference = 1A0115921B910F0A001E4035 /* libssl.a */;
 			productType = "com.apple.product-type.library.static";
@@ -860,47 +669,58 @@
 			);
 			dependencies = (
 				1A01159E1B910FD0001E4035 /* PBXTargetDependency */,
-				1A01163B1B939AAF001E4035 /* PBXTargetDependency */,
-				1A01163D1B939AAF001E4035 /* PBXTargetDependency */,
 			);
 			name = "OpenSSLTests OS X";
 			productName = OpenSSLTests;
 			productReference = 1A0115971B910FCF001E4035 /* OpenSSLTests OS X.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A0116241B921B87001E4035 /* libcrypto OS X */ = {
+		1A0116611B93AE94001E4035 /* OpenSSL iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A01162A1B921B87001E4035 /* Build configuration list for PBXNativeTarget "libcrypto OS X" */;
+			buildConfigurationList = 1A0116671B93AE94001E4035 /* Build configuration list for PBXNativeTarget "OpenSSL iOS" */;
 			buildPhases = (
-				1A0116381B9398EF001E4035 /* Sources */,
-				1A01162D1B921BB8001E4035 /* Copy Library */,
+				1A01166A1B93AF27001E4035 /* Build Library */,
+				1A01165F1B93AE94001E4035 /* Headers */,
+				1A01165D1B93AE94001E4035 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A01162F1B921BD8001E4035 /* PBXTargetDependency */,
+				1A0116CB1B93B0B4001E4035 /* PBXTargetDependency */,
+				1A0116CD1B93B0B4001E4035 /* PBXTargetDependency */,
 			);
-			name = "libcrypto OS X";
-			productName = libcrypto;
-			productReference = 1A0116251B921B87001E4035 /* libcrypto.framework */;
+			name = "OpenSSL iOS";
+			productName = OpenSSL;
+			productReference = 1A0116621B93AE94001E4035 /* OpenSSL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1A0116301B921BFF001E4035 /* libssl OS X */ = {
+		1A0116BB1B93B069001E4035 /* crypto iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A0116341B921BFF001E4035 /* Build configuration list for PBXNativeTarget "libssl OS X" */;
+			buildConfigurationList = 1A0116C21B93B069001E4035 /* Build configuration list for PBXNativeTarget "crypto iOS" */;
 			buildPhases = (
-				1A0116391B939A0B001E4035 /* Sources */,
-				1A0116331B921BFF001E4035 /* Copy Library */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A0116311B921BFF001E4035 /* PBXTargetDependency */,
 			);
-			name = "libssl OS X";
-			productName = libcrypto;
-			productReference = 1A0116371B921BFF001E4035 /* libssl.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "crypto iOS";
+			productName = crypto;
+			productReference = 1A0116BC1B93B069001E4035 /* libcrypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1A0116C51B93B08F001E4035 /* ssl iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0116C61B93B08F001E4035 /* Build configuration list for PBXNativeTarget "ssl iOS" */;
+			buildPhases = (
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ssl iOS";
+			productName = crypto;
+			productReference = 1A0116C91B93B08F001E4035 /* libssl.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */ = {
 			isa = PBXNativeTarget;
@@ -921,42 +741,6 @@
 			productReference = 1A11D4121B8D6F0900F9A353 /* OpenSSL.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1A11D4C91B8D7EDE00F9A353 /* OpenSSL iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A11D5201B8D7EDE00F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL iOS" */;
-			buildPhases = (
-				1A11D4CC1B8D7EDE00F9A353 /* Sources */,
-				1A11D4CD1B8D7EDE00F9A353 /* Frameworks */,
-				1A11D4CF1B8D7EDE00F9A353 /* Headers */,
-				1A11D51E1B8D7EDE00F9A353 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OpenSSL iOS";
-			productName = OpenSSL;
-			productReference = 1A11D5231B8D7EDE00F9A353 /* OpenSSL.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1A11D5321B8D84B900F9A353 /* OpenSSL WatchOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A11D5881B8D84B900F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL WatchOS" */;
-			buildPhases = (
-				1A11D5351B8D84B900F9A353 /* Sources */,
-				1A11D5361B8D84B900F9A353 /* Frameworks */,
-				1A11D5381B8D84B900F9A353 /* Headers */,
-				1A11D5861B8D84B900F9A353 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OpenSSL WatchOS";
-			productName = OpenSSL;
-			productReference = 1A11D58B1B8D84B900F9A353 /* OpenSSL.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -971,7 +755,10 @@
 					1A0115961B910FCF001E4035 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					1A0116241B921B87001E4035 = {
+					1A0116611B93AE94001E4035 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1A0116BB1B93B069001E4035 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					1A11D4111B8D6F0900F9A353 = {
@@ -994,13 +781,12 @@
 			projectRoot = "";
 			targets = (
 				1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */,
-				1A0116241B921B87001E4035 /* libcrypto OS X */,
-				1A0116301B921BFF001E4035 /* libssl OS X */,
+				1A0115861B910F04001E4035 /* crypto OS X */,
+				1A01158B1B910F0A001E4035 /* ssl OS X */,
 				1A0115961B910FCF001E4035 /* OpenSSLTests OS X */,
-				1A11D4C91B8D7EDE00F9A353 /* OpenSSL iOS */,
-				1A11D5321B8D84B900F9A353 /* OpenSSL WatchOS */,
-				1A0115861B910F04001E4035 /* crypto */,
-				1A01158B1B910F0A001E4035 /* ssl */,
+				1A0116611B93AE94001E4035 /* OpenSSL iOS */,
+				1A0116BB1B93B069001E4035 /* crypto iOS */,
+				1A0116C51B93B08F001E4035 /* ssl iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -1013,50 +799,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A11D51E1B8D7EDE00F9A353 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D5861B8D84B900F9A353 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A01162D1B921BB8001E4035 /* Copy Library */ = {
+		1A01166A1B93AF27001E4035 /* Build Library */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Library";
+			name = "Build Library";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FRAMEWORKEXECUTABLE=\"$TARGET_BUILD_DIR/$PRODUCT_NAME.framework/Versions/A/$PRODUCT_NAME\"\n\nrm -f \"$FRAMEWORKEXECUTABLE\"\n\ncp \"$TARGET_BUILD_DIR/libcrypto.a\" \"$FRAMEWORKEXECUTABLE\"";
-		};
-		1A0116331B921BFF001E4035 /* Copy Library */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Library";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FRAMEWORKEXECUTABLE=\"$TARGET_BUILD_DIR/$PRODUCT_NAME.framework/Versions/A/$PRODUCT_NAME\"\n\nrm -f \"$FRAMEWORKEXECUTABLE\"\n\ncp \"$TARGET_BUILD_DIR/libcrypto.a\" \"$FRAMEWORKEXECUTABLE\"";
+			shellScript = "set | grep ARCH\nset -x\n\necho \"***** removing static libraries from $TARGET_BUILD_DIR *****\"\nrm -f \"$TARGET_BUILD_DIR/\"*-libcrypto.a\nrm -f \"$TARGET_BUILD_DIR\"*-libssl.a\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source\n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n\nif [ \"$BUILDARCH\" == \"x86_64\" ]; then\n\nOPEN_SSL_ARCH=\"darwin64-x86_64-cc\"\n\n./Configure --disable-shared darwin64-x86_64-cc no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nelse\n\n./config --disable-shared no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\n\nfi\n\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n\necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n\necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n";
 		};
 		1AB548A51B8F869A001DA8CD /* Build Library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1070,7 +828,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set | grep ARCH\nset -x\n\necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source\n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n\nif [ \"$BUILDARCH\" == \"x86_64\" ]; then\n\nOPEN_SSL_ARCH=\"darwin64-x86_64-cc\"\n\n./Configure --disable-shared darwin64-x86_64-cc no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nelse\n\n./config --disable-shared no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\n\nfi\n\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n\necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n\necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n";
+			shellScript = "set | grep ARCH\nset -x\n\necho \"***** removing static libraries from $TARGET_BUILD_DIR *****\"\nrm -f \"$TARGET_BUILD_DIR/\"*-libcrypto.a\nrm -f \"$TARGET_BUILD_DIR\"*-libssl.a\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source\n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n\nif [ \"$BUILDARCH\" == \"x86_64\" ]; then\n\nOPEN_SSL_ARCH=\"darwin64-x86_64-cc\"\n\n./Configure --disable-shared darwin64-x86_64-cc no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nelse\n\n./config --disable-shared no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\n\nfi\n\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n\necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n\necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1090,28 +848,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A0116381B9398EF001E4035 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A0116391B939A0B001E4035 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D4CC1B8D7EDE00F9A353 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A11D5351B8D84B900F9A353 /* Sources */ = {
+		1A01165D1B93AE94001E4035 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1128,33 +865,23 @@
 		};
 		1A01160C1B918706001E4035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A0115861B910F04001E4035 /* crypto */;
+			target = 1A0115861B910F04001E4035 /* crypto OS X */;
 			targetProxy = 1A01160B1B918706001E4035 /* PBXContainerItemProxy */;
 		};
 		1A01160E1B918709001E4035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A01158B1B910F0A001E4035 /* ssl */;
+			target = 1A01158B1B910F0A001E4035 /* ssl OS X */;
 			targetProxy = 1A01160D1B918709001E4035 /* PBXContainerItemProxy */;
 		};
-		1A01162F1B921BD8001E4035 /* PBXTargetDependency */ = {
+		1A0116CB1B93B0B4001E4035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */;
-			targetProxy = 1A01162E1B921BD8001E4035 /* PBXContainerItemProxy */;
+			target = 1A0116BB1B93B069001E4035 /* crypto iOS */;
+			targetProxy = 1A0116CA1B93B0B4001E4035 /* PBXContainerItemProxy */;
 		};
-		1A0116311B921BFF001E4035 /* PBXTargetDependency */ = {
+		1A0116CD1B93B0B4001E4035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A11D4111B8D6F0900F9A353 /* OpenSSL OS X */;
-			targetProxy = 1A0116321B921BFF001E4035 /* PBXContainerItemProxy */;
-		};
-		1A01163B1B939AAF001E4035 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A0116241B921B87001E4035 /* libcrypto OS X */;
-			targetProxy = 1A01163A1B939AAF001E4035 /* PBXContainerItemProxy */;
-		};
-		1A01163D1B939AAF001E4035 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A0116301B921BFF001E4035 /* libssl OS X */;
-			targetProxy = 1A01163C1B939AAF001E4035 /* PBXContainerItemProxy */;
+			target = 1A0116C51B93B08F001E4035 /* ssl iOS */;
+			targetProxy = 1A0116CC1B93B0B4001E4035 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1197,7 +924,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = crypto;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1234,7 +960,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = crypto;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1276,7 +1001,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = ssl;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1313,7 +1037,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = ssl;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1358,7 +1081,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1399,11 +1121,10 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		1A01162B1B921B87001E4035 /* Debug */ = {
+		1A0116681B93AE94001E4035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1420,7 +1141,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -1428,7 +1149,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1445,23 +1165,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.libcrypto;
-				PRODUCT_MODULE_NAME = libcrypto;
-				PRODUCT_NAME = libcrypto;
-				SDKROOT = macosx;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
+				PRODUCT_NAME = OpenSSL;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1A01162C1B921B87001E4035 /* Release */ = {
+		1A0116691B93AE94001E4035 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1478,7 +1197,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1488,7 +1207,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1499,22 +1217,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.libcrypto;
-				PRODUCT_MODULE_NAME = libcrypto;
-				PRODUCT_NAME = libcrypto;
-				SDKROOT = macosx;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
+				PRODUCT_NAME = OpenSSL;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		1A0116351B921BFF001E4035 /* Debug */ = {
+		1A0116C31B93B069001E4035 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1531,15 +1249,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1554,25 +1265,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.libcrypto;
-				PRODUCT_MODULE_NAME = libssl;
-				PRODUCT_NAME = libssl;
-				SDKROOT = macosx;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = crypto;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		1A0116361B921BFF001E4035 /* Release */ = {
+		1A0116C41B93B069001E4035 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1589,17 +1292,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1608,20 +1304,95 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.libcrypto;
-				PRODUCT_MODULE_NAME = libssl;
-				PRODUCT_NAME = libssl;
-				SDKROOT = macosx;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = crypto;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0116C71B93B08F001E4035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ssl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1A0116C81B93B08F001E4035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ssl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1673,6 +1444,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/openssl",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"-lcrypto",
@@ -1680,10 +1452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
 				PRODUCT_NAME = OpenSSL;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1732,6 +1501,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/openssl",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"-lcrypto",
@@ -1739,238 +1509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
 				PRODUCT_NAME = OpenSSL;
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				VALID_ARCHS = "i386 x86_64";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A11D5211B8D7EDE00F9A353 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
-				PRODUCT_NAME = OpenSSL;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7 armv7s";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A11D5221B8D7EDE00F9A353 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
-				PRODUCT_NAME = OpenSSL;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7 armv7s";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A11D5891B8D84B900F9A353 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
-				PRODUCT_NAME = OpenSSL;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7k";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1A11D58A1B8D84B900F9A353 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.openssl.OpenSSL;
-				PRODUCT_NAME = OpenSSL;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "i386 armv7k";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1984,9 +1523,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MODULEMAP_FILE = $SRCROOT/module.modulemap;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos watchos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -1998,9 +1536,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MODULEMAP_FILE = $SRCROOT/module.modulemap;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos watchos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s armv7k";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -2008,7 +1545,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto" */ = {
+		1A01158A1B910F04001E4035 /* Build configuration list for PBXNativeTarget "crypto OS X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0115881B910F04001E4035 /* Debug */,
@@ -2017,7 +1554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl" */ = {
+		1A01158F1B910F0A001E4035 /* Build configuration list for PBXNativeTarget "ssl OS X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0115901B910F0A001E4035 /* Debug */,
@@ -2035,19 +1572,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A01162A1B921B87001E4035 /* Build configuration list for PBXNativeTarget "libcrypto OS X" */ = {
+		1A0116671B93AE94001E4035 /* Build configuration list for PBXNativeTarget "OpenSSL iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A01162B1B921B87001E4035 /* Debug */,
-				1A01162C1B921B87001E4035 /* Release */,
+				1A0116681B93AE94001E4035 /* Debug */,
+				1A0116691B93AE94001E4035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		1A0116341B921BFF001E4035 /* Build configuration list for PBXNativeTarget "libssl OS X" */ = {
+		1A0116C21B93B069001E4035 /* Build configuration list for PBXNativeTarget "crypto iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A0116351B921BFF001E4035 /* Debug */,
-				1A0116361B921BFF001E4035 /* Release */,
+				1A0116C31B93B069001E4035 /* Debug */,
+				1A0116C41B93B069001E4035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A0116C61B93B08F001E4035 /* Build configuration list for PBXNativeTarget "ssl iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0116C71B93B08F001E4035 /* Debug */,
+				1A0116C81B93B08F001E4035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2057,24 +1602,6 @@
 			buildConfigurations = (
 				1A11D4171B8D6F0900F9A353 /* Debug */,
 				1A11D4181B8D6F0900F9A353 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A11D5201B8D7EDE00F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A11D5211B8D7EDE00F9A353 /* Debug */,
-				1A11D5221B8D7EDE00F9A353 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A11D5881B8D84B900F9A353 /* Build configuration list for PBXNativeTarget "OpenSSL WatchOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A11D5891B8D84B900F9A353 /* Debug */,
-				1A11D58A1B8D84B900F9A353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
